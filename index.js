@@ -18,7 +18,22 @@
 // arr.sort((a, b) => b - a);
 // console.log(arr);
 
+// ex1upd
+// const numberArr = [5, 30, 15, 40, 50, 25, 10, 35, 20, 45]
+// const sortArr = (arr, sortDirection) => {
+//     const arrIsValid = arr.every((item) => typeof item === 'number' && item === item);
 
+//     if(!arrIsValid) return 'va rog sa introduceti doar liste de cifre'
+
+//     if(sortDirection === 'ASC') {
+//         return arr.sort((a, b) => a-b > 0 ? 1 : -1)
+//     } else {
+//         return arr.sort((a, b) => b - a > 0 ? 1 : -1)
+//     }
+// }
+
+// console.log(sortArr(numberArr, 'ASC'))
+// console.log(sortArr(numberArr, 'DSC'))
 
 // ex2
 
@@ -32,6 +47,17 @@
 //     console.log('not found') 
 // } 
 
+// ex2upd
+// const arr = [5, 30, 15, 40, 50, 25, 10, 35, 20, 45]
+
+// const findIndex = (arr, element) => {
+//     const result = arr.findIndex(item => item === element)
+
+//     return result !== -1 ? result : 'not found'
+// }
+
+// console.log(findIndex(arr, 4))
+// console.log(findIndex(arr, 10))
 
 
 // ex3
@@ -43,6 +69,14 @@
 // console.log(arrSqrt)
 
 
+// ex3upd
+// const arr = [5, 30, 15, 40, 50, 25, 10, 35, 20, 45]
+
+// const returnSqrtInt = (arr) => {
+//     return arr.filter((item) => Number.isInteger(Math.sqrt(item)))
+// }
+
+// console.log(returnSqrtInt(arr))
 
 // ex4
 
@@ -55,3 +89,17 @@
 // console.log(containsNum)
 // console.log(evenNum)
 // console.log(oddNum)
+
+
+// ex4upd
+// const arr = [5, 30, 15, 40, 50, 25, 10, 35, 20, 45]
+
+// const returnNumbersTypeList = (arr) => {
+//     const evenArr = arr.filter(item => item%2 === 0)
+//     const oddArr = arr.filter(item => item%2 !== 0)
+
+//     return {evenArr, oddArr};
+// }
+
+
+// console.log(returnNumbersTypeList(arr))
